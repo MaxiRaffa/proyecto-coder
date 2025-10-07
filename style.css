@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.navegador{
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #efb810;
+    background-color: rgb(19, 18, 18);
+    padding: 20px;
+    list-style: none;
+    justify-content: space-evenly;
+    position: fixed;
+     width: 100%;
+}
+
+
+.banner {
+    background-image: url(./media/banner.jpg);
+    background-size:cover;
+    background-position-y: top;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #efb810;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+   
+}
+
+p{
+ font-family: "Orbitron", sans-serif ;
+ text-align: center;
+ color: #ffffff;  
+ font-size: larger;
+ font-weight: lighter;
+ font-style: normal;
+ padding: 5px;
+}
+
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #efb810;
+}
+
+.grid-principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "novedades novedades novedades"
+    "foto1 foto2 foto3"
+    "foto4 foto4 logro1"
+    "foto4 foto4 logro2"
+    "foto4 foto4 logro3";
+    gap: 10px;
+    text-align: center;
+}
+
+
+.grid-principal img{
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+    
+}
+.grid-principal p{
+    font-size: 15px;
+}
+
+.grid-principal .novedades{
+    grid-area: novedades;
+    color: #efb810;
+    background-color: rgb(19, 18, 18);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+}
+
+.grid-principal .foto-1{
+    grid-area: foto1;
+    color: #ffffff;
+    background-color: rgb(19, 18, 18);
+}
+.grid-principal .foto-2{
+    grid-area: foto2;
+    color: #ffffff;
+    background-color: rgb(19, 18, 18);
+}
+.grid-principal .foto-3{
+    grid-area: foto3;
+    color: #ffffff;
+    background-color: rgb(19, 18, 18);
+}
+
+.grid-principal .foto-4{
+    grid-area: foto4;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+}
+.grid-principal .logro-1{
+    grid-area: logro1;
+    color: #ffffff;
+    background-color: rgb(19, 18, 18);
+}
+.grid-principal .logro-2{
+    grid-area: logro2;
+    color: #ffffff;
+    background-color: rgb(19, 18, 18);
+}
+.grid-principal .logro-3{
+    grid-area: logro3;
+    color: #ffffff;
+    background-color: rgb(19, 18, 18);
+}
+
+.foto-4 img{
+    width: 100%;
+    height: auto;
+    border-radius:0%;
+    padding-top: 10px;
+}
+
+.logro-1 img{
+    width: 60px;
+    height: auto;
+    border-radius:0%;
+    padding-top: 50px;
+}
+.logro-2 img{
+    width: 60px;
+    height: auto;
+    border-radius:0%;
+    padding-top: 50px;
+}
+.logro-3 img{
+    width: 60px;
+    height: auto;
+    border-radius:0%;
+    padding-top: 50px;
+}
+
+.carousel-inner img {
+  margin-top: 30px;
+  height: 600px;        
+  object-fit: contain;     
+}
+
+footer img {
+    width: 85px;
+    background-color: rgb(19, 18, 18);
+}
